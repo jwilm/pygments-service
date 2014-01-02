@@ -1,0 +1,38 @@
+{
+  "name": "pygment-service",
+  "version": "0.0.0",
+  "description": "Node service providing Pygments processing",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test",
+    "start": "node --harmony runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwilm/pygments-service"
+  },
+  "keywords": [
+    "node",
+    "pygments",
+    "koa"
+  ],
+  "author": "Joe Wilm <jdwilm@gmail.com> (http://jwilm.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jwilm/pygments-service/issues"
+  },
+  "homepage": "https://github.com/jwilm/pygments-service",
+  "dependencies": {
+    "koa": "0.1.x",
+    "koa-body-parser": "0.2.x",
+    "pygments-async": "0.0.1",
+    "koa-logger": "1.1.x"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "supertest": "*"
+  },
+  "engines": {
+    "node": ">=0.11.9"
+  }
+}
