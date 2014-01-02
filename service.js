@@ -39,7 +39,7 @@ bodyParser(app, {});
 
 // Handle the request
 app.use(function *() {
-  if(this.path !== '/pygmentize')
+  if(this.path !== '/pygmentize' || this.method !== 'POST')
     return;
 
   var data = (yield * this.request.urlencoded()) ||

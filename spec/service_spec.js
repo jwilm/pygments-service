@@ -22,4 +22,14 @@ describe('pygments-service', function() {
         done();
       });
   });
+
+  it('should 404 on other routes', function(done) {
+    request(app.listen())
+      .get('/pygmentize')
+      .expect(404)
+      .end(function(err) {
+        if(err) done(err);
+        done();
+      });
+  });
 });
